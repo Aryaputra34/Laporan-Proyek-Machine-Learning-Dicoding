@@ -53,7 +53,9 @@ Terdapat 9 variabel dalam dataset:
 
 #### Deskripsi Statistik
 
-![Statistik](asset/laporan1_statistik.png)
+<p align="center">
+    <img src="asset/laporan1_statistik.png" alt="Statistik" />
+</p>
 
 Responden memiliki rentang
 - Usia 0.08 - 80 tahun
@@ -69,7 +71,9 @@ Pada gambar diatas, terdapat outlier pada **bmi** (95), **HbA1c_level** (9), dan
 
 #### Memeriksa nilai kolom gender
 
-![Cek Gender](asset/cek_gender.png)
+<p align="center">
+    <img src="asset/cek_gender.png" alt="Cek Gender" />
+</p>
 
 Terdapat gender yang bernilai other, melakukan drop pada gender yang memiliki value other karena merupakan missing value
 
@@ -284,13 +288,17 @@ Dari GridSearchCV didapatkan model terbaik dan akan dilakukan prediksi. Dari has
 
 Akurasi adalah metrik yang menunjukkan proporsi prediksi benar dari keseluruhan prediksi yang dibuat oleh model. Rumus akurasi adalah:
 
-![Rumus Akurasi](asset/akurasi.png)
+<p align="center">
+  <img src="asset/akurasi.png" alt="Rumus Akurasi" />
+</p>
 
 ### F1 Score
 
 F1 Score adalah metrik yang menggabungkan presisi (precision) dan recall, dan lebih tepat untuk data yang tidak seimbang. Rumus F1 Score adalah:
 
-![F1 Score](asset/F1_score.png)
+<p align="center">
+    <img src="asset/F1_score.png" alt="F1 Score" />
+</p>
 
 - Presisi menunjukkan proporsi prediksi positif yang benar-benar positif. Ini berguna saat kita ingin meminimalkan jumlah prediksi positif yang salah.
 - Recall menunjukkan proporsi data aktual positif yang berhasil diprediksi dengan benar oleh model. Ini berguna saat penting untuk menangkap semua data positif.
