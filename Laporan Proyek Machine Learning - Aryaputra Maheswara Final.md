@@ -154,7 +154,9 @@ Distribusi riwayat merokok responden
 
 Dari gambar diatas, terdapat variabel bernama No info yang merupakan missing value, oleh karena itu maka responden dengan riwayat merokok no info dapat di hapus.
 
-![Hapus No Info](asset/smoke_history_delete.png)
+<p align="center" >
+    <img src="asset/smoke_history_delete.png" alt="Hapus No Info" />
+</p>
 
 ### Encoding
 
