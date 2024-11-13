@@ -169,11 +169,11 @@ gender: 0=Perempuan, 1=Laki-laik
 
 Melakukan data splitting dengan menggunakan Train-Test-Split
 
-![Train Test Split](asset/diabetes_train_test_split.png)
-
 Menggunakan rasio pembagian data latih uji sebesar 90:10 dikarenakan jumlah dataset yang cukup besar sebesar 63 ribu sampel
 
-![Output Train Test Split](asset/output_train_test_split_diabetes.png)
+<p align="center">
+    <img src="asset/output_train_test_split_diabetes.png" alt="output train test split" />
+</p>
 
 ### Standarisasi
 Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses scaling dan standarisasi membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. 
@@ -184,7 +184,10 @@ StandardScaler melakukan proses standarisasi fitur dengan mengurangkan mean (nil
 
 Standarisasi dilakukan secara terpisah antar train set dan test set guna menghindari terjadinya kebocoran data (data leak)
 
-![Standarisasi Train set](asset/Standarisasi_test_diabetes.png)
+<p align="center">
+    <img src="asset/Standarisasi_test_diabetes.png" alt="Standarisasi test diabetes" />
+</p>
+
 
 ## Modelling
 
