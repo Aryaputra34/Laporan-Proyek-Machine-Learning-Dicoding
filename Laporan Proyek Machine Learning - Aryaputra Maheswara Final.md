@@ -290,7 +290,7 @@ Akurasi adalah metrik yang menunjukkan proporsi prediksi benar dari keseluruhan 
 
 F1 Score adalah metrik yang menggabungkan presisi (precision) dan recall, dan lebih tepat untuk data yang tidak seimbang. Rumus F1 Score adalah:
 
-![F1 Score](asset/F1 score.png)
+![F1 Score](asset/F1_score.png)
 
 - Presisi menunjukkan proporsi prediksi positif yang benar-benar positif. Ini berguna saat kita ingin meminimalkan jumlah prediksi positif yang salah.
 - Recall menunjukkan proporsi data aktual positif yang berhasil diprediksi dengan benar oleh model. Ini berguna saat penting untuk menangkap semua data positif.
