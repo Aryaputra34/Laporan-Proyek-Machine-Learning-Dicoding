@@ -49,5 +49,5 @@ Terdapat 9 variabel dalam dataset:
 
 ## Deskripsi Statistik
 ---
-![Statistik!](/assets/laporan1_statistik.png")
+![Statistik!](asset/laporan1_statistik.png)
 
