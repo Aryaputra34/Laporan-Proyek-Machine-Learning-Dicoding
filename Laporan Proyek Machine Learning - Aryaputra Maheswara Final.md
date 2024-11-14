@@ -32,7 +32,11 @@ Dengan kemajuan teknologi, khususnya dalam bidang machine learning dan predictiv
 
 ## Data Understanding
 ---
-Pada proyek machine learning ini menggunakan data diabetes yang tersedia pada website kaggle [Diabetes prediction dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset), dataset ini berisi data medis dan demografik dari pasien. 
+Pada proyek machine learning ini menggunakan data diabetes yang tersedia pada website kaggle [Diabetes prediction dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset), dataset ini berisi data medis dan demografik dari pasien berisi 100.000 baris sampel dan 9 kolom variabel. 
+
+<p align="center">
+    <img src="asset/shape.png" alt="datasset shape" />
+</p>
 
 Terdapat 9 variabel dalam dataset:
 | Variabel | Keterangan |
@@ -197,7 +201,7 @@ Standarisasi dilakukan secara terpisah antar train set dan test set guna menghin
 
 ### Logistic Regression
 
-Logistic regression adalah algoritma klasifikasi berbasis model linear yang memprediksi probabilitas kelas tertentu berdasarkan input fitur. Model ini bekerja dengan menghitung fungsi linear dari fitur, kemudian mengaplikasikan fungsi sigmoid (logistic function) untuk mengonversi hasilnya menjadi probabilitas antara 0 dan 1. Berdasarkan probabilitas tersebut, model kemudian memutuskan apakah input termasuk dalam kelas tertentu (biner) atau kelas yang lebih umum dalam versi multiklas.
+Logistic regression adalah algoritma klasifikasi berbasis model linear yang memprediksi probabilitas kelas tertentu berdasarkan input fitur. Model ini bekerja dengan menghitung fungsi linear dari fitur, kemudian mengaplikasikan fungsi sigmoid (logistic function) untuk mengonversi hasilnya menjadi probabilitas antara 0 dan 1. Berdasarkan probabilitas tersebut, model kemudian memutuskan apakah input termasuk dalam kelas tertentu (biner) atau kelas yang lebih umum dalam versi multiklas. [1]
 
 Kelebihan
 - Sederhana dan Mudah Ditafsirkan: Logistic regression adalah model yang linear, sehingga mudah dipahami dan ditafsirkan. Koefisien dari model ini memberikan wawasan tentang hubungan antara fitur dan probabilitas kelas.
@@ -219,7 +223,7 @@ Parameter
 ---
 
 ### Random Forest
-Random forest adalah algoritma berbasis ensemble yang terdiri dari banyak pohon keputusan (decision trees). Setiap pohon dilatih dengan sampel acak dari data dan fitur yang berbeda, menghasilkan model independen yang memprediksi secara terpisah. Hasil prediksi dari setiap pohon kemudian digabungkan dengan metode voting (untuk klasifikasi) atau rata-rata (untuk regresi) untuk mendapatkan prediksi akhir.
+Random forest adalah algoritma berbasis ensemble yang terdiri dari banyak pohon keputusan (decision trees) [2]. Setiap pohon dilatih dengan sampel acak dari data dan fitur yang berbeda, menghasilkan model independen yang memprediksi secara terpisah. Hasil prediksi dari setiap pohon kemudian digabungkan dengan metode voting (untuk klasifikasi) atau rata-rata (untuk regresi) untuk mendapatkan prediksi akhir [3].
 
 Kelebihan
 - Kemampuan untuk Menangani Data yang Kompleks: Random forest terdiri dari banyak pohon keputusan (decision trees), sehingga memiliki kemampuan untuk menangkap pola yang kompleks dan interaksi antar fitur.
@@ -242,7 +246,7 @@ Parameter
 
 ### K-Nearest Neighbors
 
-KNN adalah algoritma non-parametrik yang bekerja dengan mencari sejumlah tetangga terdekat (K) dari suatu titik data baru, kemudian menentukan kelas berdasarkan kelas mayoritas dari tetangga tersebut. Algoritma ini beroperasi dengan asumsi bahwa data dengan kelas yang sama akan lebih sering berada berdekatan.
+K-Nearest Neighbors (KNN) adalah algoritma non-parametrik yang menentukan kelas suatu data baru berdasarkan sejumlah tetangga terdekatnya [4]. Algoritma ini menggunakan prinsip bahwa data dengan kelas yang sama cenderung berada dalam jarak yang berdekatan dalam ruang fitur. Kelas dari titik data baru kemudian ditentukan oleh mayoritas kelas dari tetangga terdekat [5].
 
 Kelebihan
 - Non-parametrik dan Fleksibel: KNN tidak membuat asumsi khusus tentang distribusi data, sehingga dapat bekerja baik pada data yang tidak memiliki pola linear.
@@ -323,4 +327,9 @@ F1 Score adalah metrik yang menggabungkan presisi (precision) dan recall, dan le
 
 
 
-
+Referensi:
+[1] Hosmer, D. W., Lemeshow, S., & Sturdivant, R. X. (2013). Applied Logistic Regression (Vol. 398). John Wiley & Sons.
+[2] Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32.
+[3] Liaw, A., & Wiener, M. (2002). Classification and regression by randomForest. R News, 2(3), 18–22.
+[4] Cover, T., & Hart, P. (1967). Nearest neighbor pattern classification. IEEE Transactions on Information Theory, 13(1), 21–27.
+[5] Altman, N. S. (1992). An introduction to kernel and nearest-neighbor nonparametric regression. The American Statistician, 46(3), 175–185.
